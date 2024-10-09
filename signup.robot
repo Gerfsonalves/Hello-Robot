@@ -7,6 +7,13 @@ Library  Browser
 *** Test Cases ***
 Deve poder cadastrar um novo dog walker
 
+  # Ge alves
+  # Gealves@gmail.com
+  # 00000014141
+  # 04534011
+  # 50
+  # Casa 2
+
   New Browser  browser=chromium  headless=False
   New Page  https://walkdog.vercel.app/signup
 
