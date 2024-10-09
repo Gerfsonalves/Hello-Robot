@@ -1,25 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.1 (Python 3.11.2 on win32)" generated="2024-10-09T15:27:23.292363" rpa="false" schemaversion="5">
-<suite id="s1" name="Hello" source="C:\Users\mpn-e\OneDrive\Desktop\walkdog-robot\hello.robot">
-<test id="s1-t1" name="Deve mostrar uma mensagem de boas vindas" line="5">
-<kw name="Log To Console" owner="BuiltIn">
-<arg>Hello Robot</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-10-09T15:27:23.351249" elapsed="0.000000"/>
+<robot generator="Robot 7.1 (Python 3.11.2 on win32)" generated="2024-10-09T16:24:07.334352" rpa="false" schemaversion="5">
+<suite id="s1" name="Home" source="C:\Users\mpn-e\OneDrive\Desktop\walkdog-robot\home.robot">
+<test id="s1-t1" name="Home page deve estar online" line="7">
+<kw name="New Page" owner="Browser">
+<msg time="2024-10-09T16:24:07.589264" level="INFO">Starting Browser process C:\Users\mpn-e\AppData\Local\Programs\Python\Python311\Lib\site-packages\Browser\wrapper\index.js using port 64653</msg>
+<msg time="2024-10-09T16:24:07.589264" level="INFO">Node startup parameters: ['node', 'C:\\Users\\mpn-e\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\Browser\\wrapper\\index.js', '64653']</msg>
+<msg time="2024-10-09T16:24:19.395461" level="INFO">Keyword 'Take Screenshot  fail-screenshot-{index}' could not be run on failure:
+Error: Tried to take screenshot, but no page was open.</msg>
+<msg time="2024-10-09T16:24:19.395461" level="INFO">See also file:///C:/Users/mpn-e/OneDrive/Desktop/walkdog-robot/logs/playwright-log.txt for additional details.</msg>
+<msg time="2024-10-09T16:24:19.395461" level="FAIL">TimeoutError: page.goto: Timeout 10000ms exceeded.
+Call log:
+  - navigating to "https://walkdog.vercel.app/", waiting until "load"
+</msg>
+<arg>https://walkdog.vercel.app</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="FAIL" start="2024-10-09T16:24:07.554738" elapsed="11.851739">TimeoutError: page.goto: Timeout 10000ms exceeded.
+Call log:
+  - navigating to "https://walkdog.vercel.app/", waiting until "load"
+</status>
 </kw>
-<status status="PASS" start="2024-10-09T15:27:23.351249" elapsed="0.000000"/>
+<status status="FAIL" start="2024-10-09T16:24:07.554738" elapsed="11.851739">TimeoutError: page.goto: Timeout 10000ms exceeded.
+Call log:
+  - navigating to "https://walkdog.vercel.app/", waiting until "load"
+</status>
 </test>
-<doc>Meu primeiro teste em Robot Framework</doc>
-<status status="PASS" start="2024-10-09T15:27:23.295503" elapsed="0.055746"/>
+<doc>Suite de testes da home page</doc>
+<status status="FAIL" start="2024-10-09T16:24:07.347862" elapsed="12.110374"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Hello">Hello</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="Home">Home</stat>
 </suite>
 </statistics>
 <errors>
