@@ -1,7 +1,7 @@
 *** Settings ***
 Documentation  Suite de testes de cadastro de dog walker
 
-Resource  ../resources/bese.resource
+Resource  ../resources/base.resource
 
 
 *** Test Cases ***
