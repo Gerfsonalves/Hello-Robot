@@ -19,10 +19,9 @@ Deve poder cadastrar um novo dog walker
   ...    details=Casa 2  
   ...    cnh=toretto.jpg
 
+  Start session
   Ir para página de cadastro
   Preenche o fomulario de cadastro  ${dog_walker}
   Submeter o formulario de cadastro
   Popup should be   Recebemos o seu cadastro e em breve retornaremos o contato.
-
-*** Keywords ***
-
+  Finish session
